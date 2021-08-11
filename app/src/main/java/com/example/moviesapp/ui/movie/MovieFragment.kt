@@ -1,22 +1,24 @@
-package com.example.moviesapp
+package com.example.moviesapp.ui.movie
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.moviesapp.databinding.FragmentMovieDetailBinding
+import com.example.moviesapp.databinding.FragmentMovieBinding
 
 
-class MovieDetailFragment : Fragment() {
+class MovieFragment : Fragment() {
 
-    private lateinit var binding: FragmentMovieDetailBinding
+
+    private lateinit var binding: FragmentMovieBinding
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentMovieDetailBinding.inflate(inflater, container, false)
+        binding = FragmentMovieBinding.inflate(inflater, container, false)
         return binding.root
     }
 
